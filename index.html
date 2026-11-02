@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <h1>🐍 Snake Game</h1>
+    <p class="subtitle">Eat the apples. Don't hit the walls!</p>
+
+    <section class="score-board" aria-live="polite">
+      <span>Score: <strong id="score">0</strong></span>
+      <span>Best: <strong id="best">0</strong></span>
+    </section>
+
+    <canvas id="game" width="400" height="400" aria-label="Snake game board"></canvas>
+
+    <p id="message">Press Start to play</p>
+    <div class="buttons">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="restartBtn">Restart</button>
+    </div>
+
+    <div class="mobile-controls" aria-label="Touch controls">
+      <button data-direction="up" aria-label="Up">↑</button>
+      <div>
+        <button data-direction="left" aria-label="Left">←</button>
+        <button data-direction="down" aria-label="Down">↓</button>
+        <button data-direction="right" aria-label="Right">→</button>
+      </div>
+    </div>
+
+    <p class="instructions">Controls: Arrow keys or W A S D. Space = pause/resume.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
